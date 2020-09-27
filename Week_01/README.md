@@ -1,1 +1,10 @@
 学习笔记
+1.Java的Queue是接口，AbstractQueue是实现它的一个类。包括add、remove、element、clear和addAll；
+2.PriorityQueue继承AbstractQueue类
+    poll操作：先将最后一个元素赋值给x，然后size--，把最后一个元素附成null，用比较器筛选会造成logn的时间复杂度。
+    add操作：添加元素，如果size超出queue，grow一下容量，容量小于64变双倍，否则增加百分之五十，size+1。
+3.写递归题的要点：
+    返回值；递归体做了什么；递归边界。
+4.双指针法： 
+    左右指针：左加右减，适用于有序数组，可以简化计算，常用于求最值；
+    快慢指针：慢指针移动一次，快指针移动两次，用于判断循环链表和找链表中点。
